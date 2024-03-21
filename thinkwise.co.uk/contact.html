@@ -242,8 +242,9 @@
                             </div>
                             <div class="info-content">
                                 <h5 class="title">Give us a call</h5>
+                                <p> HR Department </p>
                                 <p>(+1) 400-630 123</p>
-                                <p>(+2) 500-950 456</p>
+
                             </div>
                         </div>
                         <!--Single Contact Info End -->
@@ -255,9 +256,9 @@
                                 <img src="assets/images/info-2.png" alt="">
                             </div>
                             <div class="info-content">
-                                <h5 class="title">Drop us a line</h5>
-                                <p>info@thinkwise-theme.com</p>
-                                <p>mail@thinkwise-tech.com</p>
+                                <h5 class="title">Drop us a mail</h5>
+                                <p> HR Department </p>
+                                <p>contact@thinkwiseservices.co.uk</p>
                             </div>
                         </div>
                         <!--Single Contact Info End -->
@@ -270,7 +271,7 @@
                             </div>
                             <div class="info-content">
                                 <h5 class="title">Visit our office</h5>
-                                <p>New York. 112 W 34th St caroline, USA</p>
+                                <p>1-2 Delta Gain, The Parade, Watford WD19 5BL, London UK</p>
                             </div>
                         </div>
                         <!--Single Contact Info End -->
@@ -296,33 +297,33 @@
                                     <span class="sub-title"> request a quote</span>
                                     <h3 class="title">How May We Help You!</h3>
                                 </div>
-                                <form action="#">
+                                <form id="contactForm" method="post" action="send_email.php">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <!-- Single Form Start -->
                                             <div class="single-form">
-                                                <input type="text" placeholder="Name *">
+                                                <input type="text" name="fullaName" placeholder="Name *" required>
                                             </div>
                                             <!-- Single Form End -->
                                         </div>
                                         <div class="col-sm-6">
                                             <!-- Single Form Start -->
                                             <div class="single-form">
-                                                <input type="email" placeholder="Email *">
+                                                <input type="email" name="email" placeholder="Email *" required>
                                             </div>
                                             <!-- Single Form End -->
                                         </div>
                                         <div class="col-sm-12">
                                             <!-- Single Form Start -->
                                             <div class="single-form">
-                                                <input type="text" placeholder="Subject *">
+                                                <input type="text" name="subject" placeholder="Subject *" required>
                                             </div>
                                             <!-- Single Form End -->
                                         </div>
                                         <div class="col-sm-12">
                                             <!-- Single Form Start -->
                                             <div class="single-form">
-                                                <textarea placeholder="Write A Message"></textarea>
+                                                <textarea name="message" placeholder="Write A Message" required></textarea>
                                             </div>
                                             <!-- Single Form End -->
                                         </div>
@@ -349,9 +350,9 @@
     <!-- Contact Map Start -->
     <div class="section contact-map-section">
         <div class="contact-map-wrap">
-            <iframe scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?q=New%20York%20University%20&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
-                    title="New York University" aria-label="New York University" frameborder="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1238.367885989771!2d-0.38351767336649345!3d51.628049190122454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766b3178430419%3A0x12f35aed21c565b3!2sThe%20Parade%2C%20Watford!5e0!3m2!1sen!2suk!4v1711026487740!5m2!1sen!2suk"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" aria-label="Thinkwise Office"></iframe>
         </div>
     </div>
     <!-- Contact Map End -->
@@ -375,7 +376,7 @@
                                 world-class tech teams.</p>
                             <div class="footer-social">
                                 <ul class="social">
-                                    <li><a href="#"><i class="fab flaticon-email"></i></a></li>
+                                    <li><a href="contact.html"><i class="fab flaticon-email"></i></a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
@@ -428,7 +429,7 @@
                                             <i class="flaticon-phone-call"></i>
                                         </div>
                                         <div class="info-text">
-                                            <span><a href="#">+91 458 654 528</a></span>
+                                            <span><a href="#">+44 458 654 528</a></span>
                                         </div>
                                     </li>
                                     <li>
@@ -436,7 +437,7 @@
                                             <i class="far fa-envelope-open"></i>
                                         </div>
                                         <div class="info-text">
-                                            <span><a href="#">info@example.com</a></span>
+                                            <span><a href="#">contact@thinkwiseservices.co.uk</a></span>
                                         </div>
                                     </li>
                                     <li>
@@ -444,7 +445,7 @@
                                             <i class="flaticon-pin"></i>
                                         </div>
                                         <div class="info-text">
-                                            <span>60 East 65th Street, NY</span>
+                                            <span>1-2 Delta Gain, WD19 5BL UK</span>
                                         </div>
                                     </li>
                                 </ul>
