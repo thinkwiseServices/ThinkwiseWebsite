@@ -529,6 +529,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 if(isset($_POST['send'])){
+
 $name = $_POST['fullName'];
 $email = $_POST['email'];
 $msg = $_POST['message'];
@@ -549,7 +550,7 @@ $mail->SMTPAuth   = true;                                   //Enable SMTP authen
 $mail->Username   = 'niravgoyani007@gmail.com';                     //SMTP username
 $mail->Password   = 'ltqosckteyhrtxlc';                               //SMTP password
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-$mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+$mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 //Recipients
 $mail->setFrom('niravgoyani007@gmail.com', 'Mailer');
