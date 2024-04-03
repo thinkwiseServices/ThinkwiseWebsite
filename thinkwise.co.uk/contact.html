@@ -28,6 +28,20 @@
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+ <script>
+        $(document).ready(function() { // Ensure the page is loaded
+            $("#Sendmail").click(function() {
+               jQuery.ajax({
+                    type: "POST",
+                    url: 'send_email.php',
+                });
+            });
+        });
+        </script>
+
+
 
 
     <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
@@ -297,7 +311,7 @@
                                     <span class="sub-title"> request a quote</span>
                                     <h3 class="title">How May We Help You!</h3>
                                 </div>
-                                <form id="contactForm" method="post" action="send_email.php">
+                                <form id="contactForm" method="post">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <!-- Single Form Start -->
@@ -331,7 +345,7 @@
                                         <div class="col-sm-12">
                                             <!--  Single Form Start -->
                                             <div class="form-btn">
-                                                <button class="btn" type="submit">Send Message</button>
+                                                <button class="btn" type="submit" id="Sendmail">Send Message</button>
                                             </div>
                                             <!--  Single Form End -->
                                         </div>
