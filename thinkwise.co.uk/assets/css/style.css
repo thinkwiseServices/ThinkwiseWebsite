@@ -843,8 +843,8 @@ textarea:-ms-input-placeholder {
 }
 
 .header-search {
-  margin-left: 25px;
-  padding-left: 15px;
+  margin-left: 15px;
+  padding-left: 4px;
   position: relative;
 }
 
